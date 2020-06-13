@@ -37,5 +37,3 @@
         netconf_config:
             content: "{{ lookup('template', 'templates/createFps.j2') }}"
         ignore_errors: True
-
-
