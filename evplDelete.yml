@@ -28,11 +28,11 @@
   tasks:
       # - name: "Create Classifiers"
       #   netconf_config:
-      #        content: "{{ lookup('template', 'templates/classifierCreate.j2') }}"           
+      #        content: "{{ lookup('template', 'templates/classifierDelete.j2') }}"           
       #   ignore_errors: True
       - name: "delete Forwarding-Domain"
         netconf_config:
-            content: "{{ lookup('template', 'templates/createFds.j2') }}"
+            content: "{{ lookup('template', 'templates/deleteFds.j2') }}"
       - name: "delete Flow-Points and transforms"
         netconf_config:
             content: "{{ lookup('template', 'templates/deleteFps.j2') }}"
