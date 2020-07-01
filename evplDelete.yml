@@ -32,6 +32,7 @@
     - name: "delete Forwarding-Domain"
       netconf_config:
         content: "{{ lookup('template', 'templates/deleteFds.j2') }}"
+      ignore_errors: True
     - name: "Create Classifiers"
       netconf_config:
         content: "{{ lookup('template', 'templates/classifierDelete.j2') }}"
