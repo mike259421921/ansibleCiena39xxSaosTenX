@@ -1,14 +1,14 @@
-<config>  
+<config>
   <classifiers>
     {% if createUntaggedClassifier  %}
     <classifier operation="delete">
       <name>Untagged</name>
-   </classifier>
+    </classifier>
     {% endif %}
     {% for classifier in taggedClassifiers %}
     <classifier operation="delete">
-      <name>clsfr_v{{classifier}}</name>
-   </classifier>
+      <name>VLAN{{classifier}}</name>
+    </classifier>
     {% endfor %}
   </classifiers>
 </config>
