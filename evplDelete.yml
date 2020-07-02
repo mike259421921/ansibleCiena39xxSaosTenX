@@ -3,7 +3,6 @@
   hosts: "PN3926nids"
   include_vars:
     file: evplCreate.yml
-    name: evpl_vars
   # vars:
   #   createUntaggedClassifier: true
   #   taggedClassifiers:

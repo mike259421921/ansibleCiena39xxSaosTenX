@@ -1,8 +1,8 @@
 <config>
   <fps xmlns="urn:ciena:params:xml:ns:yang:ciena-pn:ciena-mef-fp">
-  {% for fp in evpl_vars.fds.fps %}
+  {% for fp in fds.fps %}
     <fp operation="delete">
-      <name>{{ evpl_vars.fp.fpname }}</name>
+      <name>{{ fp.fpname }}</name>
     </fp>
       {% endfor%}
   </fps>
